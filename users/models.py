@@ -24,3 +24,4 @@ class User(AbstractUser):
     role = models.CharField(max_length=200, choices=Roles.choices, default=Roles.MEMBER)
     age = models.PositiveIntegerField(null=True)
     location = models.ForeignKey(Location, on_delete=models.CASCADE, null=True)
+
